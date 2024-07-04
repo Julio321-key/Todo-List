@@ -1,0 +1,62 @@
+/* App.css */
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li button {
+  margin-left: auto;
+  background-color: #f44336;
+}
+
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+  
+  input[type="text"], button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
